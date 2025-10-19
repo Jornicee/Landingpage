@@ -1,0 +1,246 @@
+/* Variáveis em css */
+:root {
+  --bg-color: #EEEEEE;
+  --bg-color-linkhover: #423FE5;
+  --text-color-black: #000000;
+  --text-color-inhoverr: #FFFFFF;
+  --text-color-01: #5C5B8F;
+  --text-color-02: #161E64;
+  --text-color-03: #5E5BFB;
+  --text-color-04: #5F5B5B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* * Estilos básicos para o corpo
+  ! Adicionar Tipografia 
+*/
+body {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1em;
+  font-weight: 400; /* ! Peso normal - Regular */  
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color-black);
+
+  min-width: 300px;
+  max-width: 1990px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+/* ! Estilos básicos para o Header */
+
+header {
+  max-width: 107.5em;
+  margin: 72px 139px 0;
+
+  font-size: 1.125em;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+/* ! Imagem Logo */
+
+header .img-logo {
+  margin-top: -3em;
+  width: 185px;
+  height: 50px;
+}
+
+/* ! Estilos para o Nav */
+
+header nav ul {
+  margin-top: -1em;
+  list-style: none;
+
+  display: flex;
+  gap: 1.8em;
+}
+
+/* ! Estilos para o item ((opções do Nav) 
+
+*/
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--text-color-black);
+}
+
+.navbar {
+  position: fixed;
+  margin-top: 3em;
+  margin-left: 30em;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+header .nav-link:hover {
+  color: var(--text-color-inhoverr);
+  background-color: var(--bg-color-linkhover);
+  border-radius: 10px;
+
+  padding: .5em 1.5em;
+  transition: 0.3s, ease-in-out;
+}
+
+/* ! Estilos para o Main */
+
+main .section-information .main-title {
+  font-size: 3em;
+  font-weight: 700;
+  margin-top: 6%;
+  margin-left: 3%;
+  color: var(--text-color-01);
+}
+
+main .section-information .main-title #text-item-1 {
+  color: var(--text-color-02);
+}
+
+main .section-information .main-title #text-item-2 {
+  color: var(--text-color-03);
+}
+
+p.main-description {
+  max-width: 30em;
+  max-height: 8em;
+  margin-top: 1em;
+  margin-left: 3%;
+  font-size: 1.2em;
+  font-weight: 400;
+
+  color: var(--text-color-04);
+}
+
+.input-group {
+  margin-left: 0.2%;
+  box-shadow: 0 1px 1px rgb(0, 0, 0, 0.1);
+  border-radius: 6px;
+  overflow: hidden;  
+}
+
+span.input-group-text {
+  background-color: #FFFFFF;
+  padding: 0.7em 1em 0.7em 1em;
+}
+
+.form-control {
+  border: none;
+  box-shadow: none;
+  padding: 0.7em 2em 0.7em 2em;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+button.btn-primary {
+  background-color: #4f46e5;
+  border: none;
+  font-weight: 500;
+  padding: 0.7em 2em 0.7em 2em;
+}
+
+button.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+.img1 {
+  transform: translateY(30px);
+  margin-left: 10%;
+  margin-top: 8em;
+}
+
+.img2 {
+  transform: translateY(-30px);
+}
+
+.position-absolute { 
+  margin-left: -4em; 
+  margin-top: 2em; 
+}
+
+@media (max-width: 1130px) {
+  header .img-logo {
+    margin-left: -4em;
+  }
+
+  .navbar {
+    margin-left: 16em;
+  }
+}
+
+@media (max-width: 600px) {
+  header .container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  header .img-logo {
+    width: 130px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .section-information {
+    padding: 2em 1em;
+    text-align: center;
+    text-align: justify;
+  }
+
+  main .section-information .main-title {
+    font-size: 1.8em;
+    line-height: 1.2em;
+  }
+
+  p.main-description {
+    font-size: 0.9em;
+    text-align: left;
+  }
+
+  .input-group {
+    align-items: stretch;
+    max-width: 100%;
+  }
+
+  .btn {
+    font-size: 0.9em;
+  }
+
+  .img1, .img2  {
+    margin: auto;
+    margin-top: 2.6em;
+  }
+
+  .img-left, .img-right { 
+    transform: translateY(0);
+  } 
+  
+  .position-absolute { 
+    margin-left: -4em; 
+    margin-top: 2em; 
+  }
+  
+  .navbar-collapse {
+    position: absolute;
+    margin-top: 115%; 
+    margin-left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 1rem 2em;
+  }
+}
