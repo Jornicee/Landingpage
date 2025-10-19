@@ -256,3 +256,68 @@ button.btn-primary:hover {
     padding: 1rem 2em;
   }
 }
+
+@media (max-width: 300px) {
+  header .container-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  header .img-logo {
+    width: 140px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .section-information {
+    padding: 2em 1em;
+    text-align: center;
+    text-align: justify;
+  }
+
+  main .section-information .main-title {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+
+  p.main-description {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  section.input-group {
+    align-items: stretch;
+    max-width: 100%;
+    padding: 0em 3em 0em 3em;
+  }
+
+  button.btn-primary {
+    padding: 0em 0.5em 0em 0.5em;
+  }
+
+  .img1, .img2  {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .img-left, .img-right { 
+    transform: translateY(0);
+  } 
+  
+  .position-absolute { 
+    margin-left: -4em; 
+    margin-top: 2em; 
+  }
+  
+  .navbar-collapse {
+    position: absolute;
+    margin-top: 115%; 
+    margin-left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 1rem 2em;
+  }
+}
