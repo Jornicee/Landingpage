@@ -205,7 +205,7 @@ button.btn-primary:hover {
   }
 
   .section-information {
-    padding: 2em 1em;
+    padding: 0.5em 0.5em;
   }
 
   main .section-information .main-title {
@@ -243,7 +243,7 @@ button.btn-primary:hover {
   }
 
   .navbar {
-    margin-left: 12em;
+    margin-left: 9em;
     margin-top: -1em;
   }
   
@@ -257,3 +257,4 @@ button.btn-primary:hover {
     line-height: 0.5em;
   }
 }
+
