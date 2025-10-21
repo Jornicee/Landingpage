@@ -30,7 +30,7 @@ body {
 
   min-width: 300px;
   max-width: 1990px;
-  height: 600px;
+  height: 550px;
   margin: 0 auto;
 }
 
@@ -78,8 +78,7 @@ header nav ul li a {
 
 .navbar {
   position: fixed;
-  margin-top: 3em;
-  margin-left: 30em;
+  margin-left: 15em;
   width: 100%;
   z-index: 1000;
   transition: background-color 0.3s ease;
@@ -178,7 +177,7 @@ button.btn-primary:hover {
   }
 
   .navbar {
-    margin-left: 16em;
+    margin-left: 2em;
   }
 
   section.input-group {
@@ -194,10 +193,9 @@ button.btn-primary:hover {
 
 @media (max-width: 600px) {
   header .container-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 1em;
+    margin-left: -5.5em;
+    
   }
 
   header .img-logo {
@@ -208,8 +206,6 @@ button.btn-primary:hover {
 
   .section-information {
     padding: 2em 1em;
-    text-align: center;
-    text-align: justify;
   }
 
   main .section-information .main-title {
@@ -219,7 +215,6 @@ button.btn-primary:hover {
 
   p.main-description {
     font-size: 1em;
-    text-align: left;
   }
 
   section.input-group {
@@ -246,13 +241,19 @@ button.btn-primary:hover {
     margin-left: -4em; 
     margin-top: 2em; 
   }
+
+  .navbar {
+    margin-left: 12em;
+    margin-top: -1em;
+  }
   
   .navbar-collapse {
     position: absolute;
-    margin-top: 90%; 
-    margin-left: -6.5em;
+    margin-top: 20em; 
+    margin-left: -7em;
     background-color: #fff;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     padding: 1em 1em 0 1em;
+    line-height: 0.5em;
   }
 }
