@@ -191,13 +191,17 @@ header {
 @media (max-width: 768px) {
 
   main {
-    margin: 1.6rem;
+    margin: 1rem;
     border-radius: 12px;
   }
 
   .main-title {
     font-size: 2rem;
     text-align: left;
+  }
+
+  header {
+    margin: 0px 4em 0;
   }
 
   header .img-logo {
@@ -235,14 +239,17 @@ header {
     margin-left: -4em; 
     margin-top: 2em; 
   }
+
+  .navbar {
+    margin: 0 2.5em 0;
+  }
   
   .navbar-collapse {
     position: absolute;
-    margin-top: 27em;
-    margin-left: -3em;
+    margin-top: 28em;
     background-color: var(--bg-color);
     padding: 1em 1em 1em 1em;
-    line-height: 0.5em;
+    line-height: 0.8em;
     z-index: 1000;
   }
 }
@@ -256,20 +263,20 @@ header {
 
 @media (min-width: 768px) and (max-width: 1200px) {
   main {
-    margin: 2em;
+    margin: 1.5em;
   }
 
   .navbar-toggler {
-    margin-left: 24em;
+    margin-left: 20em;
   }
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 27em;
+    margin-top: 28em;
     margin-left: 21em;
     background-color: var(--bg-color);
     padding: 1em 1em 1em 1em;
-    line-height: 0.5em;
+    line-height: 0.8em;
     z-index: 1000;
   }
 }
